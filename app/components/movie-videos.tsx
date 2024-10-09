@@ -1,6 +1,7 @@
 const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies"
 
 async function getVideos(id: string) {
+    throw new Error("I'm sorry, I can't do that")
     await new Promise((response) => setTimeout(response, 5000))
     const response = await fetch(`${API_URL}/${id}/videos`)
     return response.json()
